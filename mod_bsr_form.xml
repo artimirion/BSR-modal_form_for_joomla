@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" client="site" method="upgrade">
+    <name>BSR Form</name>
+    <author>Увиков Андрей</author>
+    <authorEmail>order@bestsite-studio.ru</authorEmail>
+    <authorUrl>https://bestsite-tver.ru</authorUrl>
+    <creationDate>2026</creationDate>
+    <version>1.0</version>
+    <description><![CDATA[Универсальный модуль всплывающей формы (БЭМ-версия).<br><br><b>Для вызова окна</b> добавьте кнопке на сайте класс <code>bsr-open-modal</code>.<br><br><b>Внимание:</b> Модуль работает в связке с плагином <a href="https://radicalmart.ru/all/radicalform" target="_blank">RadicalForm</a>.]]></description>
+    <files>
+        <filename module="mod_bsr_form">mod_bsr_form.php</filename>
+        <folder>tmpl</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic" label="Настройки формы">
+                <field name="rf_call_id" type="text" label="ID для RadicalForm" default="123" />
+                <field name="form_title" type="text" label="Заголовок формы" default="Оставить заявку" />
+                <field name="autofill_title" type="radio" layout="joomla.form.field.radio.switcher" label="Подставлять текст кнопки в Заголовок?" default="1">
+                    <option value="0">Нет</option>
+                    <option value="1">Да</option>
+                </field>
+                <field name="success_msg" type="textarea" label="Текст успешной отправки" default="Спасибо! Заявка принята. Обычно мы перезваниваем в течение 10-15 минут." />
+                <field name="agreement_text" type="editor" filter="raw" buttons="true" hide="pagebreak,readmore" label="Текст согласия (чекбокс)" default="Нажимая кнопку, я даю своё согласие на обработку персональных данных." />
+
+                <field name="form_fields" type="subform" label="Поля формы" multiple="true" min="1" layout="joomla.form.field.subform.repeatable-table">
+                    <form>
+                        <field name="f_type" type="list" label="Тип" default="text">
+                            <option value="text">Текст</option>
+                            <option value="tel">Телефон</option>
+                            <option value="email">Email</option>
+                            <option value="date">Дата</option>
+                            <option value="textarea">Большой текст</option>
+                        </field>
+                        <field name="f_name" type="text" label="Name (англ)" required="true" />
+                        <field name="f_placeholder" type="text" label="Placeholder" />
+                        <field name="f_required" type="radio" layout="joomla.form.field.radio.switcher" label="Обязательно?" default="0">
+                            <option value="0">JNO</option>
+                            <option value="1">JYES</option>
+                        </field>
+                        <field name="f_error" type="text" label="Текст ошибки" default="Обязательное поле" />
+                    </form>
+                </field>
+            </fieldset>
+
+            <fieldset name="advanced" label="Дизайн и Атрибуты">
+                <field name="form_id" type="text" label="ID формы" description="Укажите ID для тега form (необязательно, например: my-form)" default="" />
+                <field name="form_class" type="text" label="CSS классы формы" description="Дополнительные классы для тега form" default="" />
+                <field name="btn_class" type="text" label="CSS классы кнопки" description="Например: sppb-btn sppb-btn-default sppb-btn-round" default="sppb-btn sppb-btn-default sppb-btn-round" />
+                <field name="color_btn" type="color" label="Цвет кнопки" default="#005b8c" />
+                <field name="color_btn_hover" type="color" label="Цвет кнопки при наведении" default="#003f63" />
+                <field name="color_focus" type="color" label="Цвет рамки поля (фокус)" default="#005b8c" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
