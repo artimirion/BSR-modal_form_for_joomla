@@ -10,7 +10,7 @@
 
 Универсальный модуль модального окна с динамическим конструктором полей. Предназначен для быстрой интеграции форм обратной связи на сайты под управлением CMS Joomla.
 
-### 🚀 Основные возможности
+### Основные возможности
 
 - **Множественные формы:** Возможность размещать несколько независимых форм на одной странице без конфликтов JS.
 - **Конструктор полей:** Добавление текстовых полей, телефонов, email, дат, текстовых областей и **файлов** через админку.
@@ -25,18 +25,18 @@
 - **Автоматические обновления (Update Server):** Модуль интегрирован в штатную систему обновлений Joomla. Уведомления о новых версиях и их установка происходят прямо из админ-панели в один клик.
 - **Мультиязычность:** Полная поддержка языковых файлов Joomla (ru-RU, en-GB).
 
-### 🛠 Зависимости
+### Зависимости
 
 Модуль работает в строгой связке с плагином [RadicalForm](https://radicalmart.ru/all/radicalform). Убедитесь, что плагин установлен, опубликован, а в его настройках **разрешена загрузка файлов**.
 
-### 📦 Установка
+### Установка
 
 1. Скачайте последний релиз (ZIP-архив) со страницы модуля.
 2. В админке Joomla перейдите в **Система -> Установка -> Расширения** (System -> Install -> Extensions).
 3. Загрузите архив.
    _(В дальнейшем обновления будут приходить автоматически)._
 
-### 💡 Использование
+### Использование
 
 **Как открыть форму**
 Для вызова окна используйте CSS-классы на кнопках или ссылках:
@@ -57,7 +57,7 @@
 
 Universal modal window module with a dynamic field builder. Designed for quick integration of feedback forms into websites running on Joomla CMS.
 
-### 🚀 Key Features
+### Key Features
 
 - **Multiple Forms:** Ability to place several independent forms on one page without JS conflicts.
 - **Field Builder:** Add text fields, phones, emails, dates, textareas, and **files** directly via the admin panel.
@@ -76,14 +76,14 @@ Universal modal window module with a dynamic field builder. Designed for quick i
 
 The module works in conjunction with the [RadicalForm](https://radicalmart.ru/all/radicalform) plugin. Make sure the plugin is installed, enabled, and **file uploads are allowed** in its settings.
 
-### 📦 Installation
+### Installation
 
 1. Download the latest release (ZIP archive) from the repository page.
 2. In the Joomla admin panel, go to **System -> Install -> Extensions**.
 3. Upload the archive.
    _(Future updates will be delivered automatically)._
 
-### 💡 Usage
+### Usage
 
 **How to open the form**
 To call the window, use CSS classes on buttons or links:
@@ -98,7 +98,7 @@ To call the window, use CSS classes on buttons or links:
 
 ---
 
-## 👤 Автор / Author
+## Автор / Author
 
 **Увиков Андрей (Andrey Uvikov)**
 
