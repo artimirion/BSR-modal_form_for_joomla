@@ -1,7 +1,4 @@
 # BSR Form — Универсальная всплывающая форма для Joomla 4/5 / Universal Pop-up Form for Joomla 4/5
-
-[🇷🇺 Русский](#ру-русский) | [🇬🇧 English](#en-english)
-
 ---
 
 ## 🇷🇺 Русский
